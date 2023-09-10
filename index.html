@@ -55,7 +55,7 @@
     </div>
 
     <div class="c1">
-      <h3 class="example-title">Movie Name: The Titanic</h3>
+      <h3 class="example-title">Movie Name: The Lion King</h3>
       <div class="example-c">
         <div class="btn-c">
           <div class="h-desc">
@@ -68,8 +68,56 @@
           <div id="demo1-h" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
-              <span class="close1-h">&times;</span>
-              <p>This is the modal content.</p>
+              <span id="close1-h" class="close-btn">&times;</span>
+              <p class="no-copy">
+                Given the following image captions from a video: 1) the sun is
+                setting behind a tree in the dark 2) the sun is setting over the
+                horizon in the distance 3) the sun is setting over the horizon
+                in the distance 4) the lion king wallpapers the lion king
+                wallpapers the lion king wallpapers the lion king wallpapers the
+                lion king wallpapers the lion king wallpapers 5) the lion king,
+                lion king, lion king 2, lion king 2 wallpaper, lion king
+                wallpaper, lion king wallpaper hd wallpaper 6) a rhinoceros is
+                standing in the grass with an orange sky in the background 7)
+                the lion king, lion king, lion king 2, lion king 2 wallpaper,
+                lion king 2 wallpaper, lion king 2 wallpaper hd wallpaper 8)
+                disney's the lion king the lion, the witch and the Wardrobe 9)
+                the lion king the lion king the lion king the lion king the lion
+                king the lion king the lion king the lion king the lion king the
+                lion king 10) a group of meerkats standing on top of a hill 11)
+                the lion king the lion king the lion king the lion king the lion
+                king the lion king the lion king the lion king the lion king the
+                lion king 12) a lion stands on top of a hill with an orange sky
+                in the background 13) a painting of two storks standing in the
+                water 14) an animated image of a large bird standing on the
+                water 15) an animated image of a bird sitting on a branch 16) a
+                painting of two birds flying over a body of water 17) an
+                animated image of a large bird flying over a body of water 18) a
+                waterfall with birds flying over it at sunset 19) a black
+                background with an airplane flying in the air 20) a black
+                background with an airplane flying in the air and the following
+                transcriptions: 1) Naaan simpwenyaa mabaghi ti baba (SPEAKER_00)
+                2) Si ji ko mou (SPEAKER_00) 3) Venyaa mabogh (SPEAKER_00) 4)
+                Venyaa mabogh (SPEAKER_00) 5) Naaan simpwenyaa mabaghi ti baba
+                (SPEAKER_02) 6) Si ji ko mou (SPEAKER_01) 7) Venyaa mabogh
+                (SPEAKER_01) 8) Hai baba (SPEAKER_01) 9) Venyaa mabogh
+                (SPEAKER_01) 10) Si yo mou baba (SPEAKER_03) 11) Venyaa mabogh
+                (SPEAKER_03) 12) Venyaa mabogh (SPEAKER_03) and given that the
+                sentiments of the video are: calm 46.67% sad 33.33% inspiring
+                20.00% Describe the music that would fit such a video. Your
+                output will be fed to a text to music model. To help you out,
+                here are some prompts that worked well with the model: 1) Pop
+                dance track with catchy melodies, tropical percussion, and
+                upbeat rhythms, perfect for the beach 2) classic reggae track
+                with an electronic guitar solo 3) earthy tones, environmentally
+                conscious, ukulele-infused, harmonic, breezy, easygoing, organic
+                instrumentation, gentle grooves 4) lofi slow bpm electro chill
+                with organic samples 5) violins and synths that inspire awe at
+                the finiteness of life and the universe 6) 80s electronic track
+                with melodic synthesizers, catchy beat and groovy bass Give me
+                only the description of the music without any explanation. Give
+                me a single description.
+              </p>
             </div>
           </div>
 
@@ -83,33 +131,49 @@
           <div id="demo1-l" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
-              <span class="close1-l">&times;</span>
-              <p>This is the modal content.</p>
+              <span id="close1-l" class="close-btn">&times;</span>
+              <p class="no-copy">
+                Majestic African-inspired instrumentation with gentle
+                percussions, soothing flutes, and melodic chants evoking the
+                serenity of vast landscapes, intertwined with melancholic
+                strings capturing moments of introspection, culminating in
+                uplifting crescendos that inspire hope and awe.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="vid-c">
-          <div class="vid vid1-orig">
-            <video width="300" height="169" controls>
-              <source src="examples/titanic-scene/video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <div class="vid vid1-herrmann">
-            <video width="300" height="169" controls>
-              <source src="examples/titanic-scene/video-music-gen.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <div class="vid vid1-cmt">
-            <video width="300" height="169" controls>
-              <source src="examples/titanic-scene/video-cmt.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+          <iframe
+            width="560"
+            height="315"
+            class="vid vid1-orig"
+            src="https://www.youtube.com/embed/t3lqCJSxE7c?si=JRWVMf-2NwkTTGjR"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            class="vid vid1-gen"
+            src="https://www.youtube.com/embed/yJ9BUZ17iV8?si=_WEN_01xJgcwPxAR"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            class="vid vid1-cmt"
+            src="https://www.youtube.com/embed/XOhlwJAONn8?si=2HOuDE8AZ9oRbqLJ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
 
         <div class="vid-labels">
@@ -121,61 +185,238 @@
     </div>
 
     <div class="c1">
-      <h3 class="example-title">The LionKing</h3>
+      <h3 class="example-title">Movie Name: The Titanic</h3>
       <div class="example-c">
         <div class="btn-c">
           <div class="h-desc">
-            <button id="demo1-h-btn" class="my-btn h-btn">
+            <button id="demo2-h-btn" class="my-btn h-btn">
               High-level Descriptions
             </button>
           </div>
 
           <!-- The Modal -->
-          <div id="demo1-h" class="modal">
+          <div id="demo2-h" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
-              <span class="close1-h">&times;</span>
-              <p>This is the modal content.</p>
+              <span id="close2-h" class="close-btn">&times;</span>
+              <p class="no-copy">
+                Given the following image captions from a video: 1) a man and
+                woman standing on the deck of a boat at sunset 2) a man and
+                woman standing on the deck of a boat at sunset 3) a woman with
+                red hair standing in front of a ship 4) a woman with red hair
+                standing in front of a ship 5) leonardo dicaprio in titanic 6)
+                leonardo dicaprio in 'the great gatsby' 7) a woman with red hair
+                standing in front of a ship 8) a woman with red hair standing in
+                front of a ship 9) leonardo dicaprio in 'titanic' 10) leonardo
+                dicaprio in the movie titanic 11) a woman with red hair standing
+                in front of a ship 12) a woman with red hair standing in front
+                of a ship 13) a man and woman standing on the deck of a boat at
+                sunset 14) a man and woman standing on the deck of a boat at
+                sunset 15) a close up of a woman with red hair 16) a woman with
+                red hair looking at a man 17) a man and a woman looking at each
+                other in a scene from the movie titanic 18) leonardo dicaprio
+                and mia farrow in titanic 19) a woman looking into the eyes of a
+                man 20) a man and a woman are looking at each other 21) a man
+                and a woman standing next to each other 22) leonardo dicaprio
+                and meryl streep in titanic and the following transcriptions: 1)
+                I said you might be after me. (SPEAKER_00) 2) Give me your hand.
+                (SPEAKER_00) 3) Now close your eyes. (SPEAKER_00) 4) Go on.
+                (SPEAKER_02) 5) Step up. (SPEAKER_05) 6) Now hold on to the
+                railing. (SPEAKER_04) 7) Keep your eyes closed. (SPEAKER_01) and
+                given that the sentiments of the video are: romantic 100.00%
+                Describe the music that would fit such a video. Your output will
+                be fed to a text to music model. To help you out, here are some
+                prompts that worked well with the model: 1) Pop dance track with
+                catchy melodies, tropical percussion, and upbeat rhythms,
+                perfect for the beach 2) classic reggae track with an electronic
+                guitar solo 3) earthy tones, environmentally conscious,
+                ukulele-infused, harmonic, breezy, easygoing, organic
+                instrumentation, gentle grooves 4) lofi slow bpm electro chill
+                with organic samples 5) violins and synths that inspire awe at
+                the finiteness of life and the universe 6) 80s electronic track
+                with melodic synthesizers, catchy beat and groovy bass Give me
+                only the description of the music without any explanation. Give
+                me a single description.
+              </p>
             </div>
           </div>
 
           <div class="l-desc">
-            <button id="demo1-l-btn" class="my-btn l-btn">
+            <button id="demo2-l-btn" class="my-btn l-btn">
               Low-level Text Conditions
             </button>
           </div>
 
           <!-- The Modal -->
-          <div id="demo1-l" class="modal">
+          <div id="demo2-l" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
-              <span class="close1-l">&times;</span>
-              <p>This is the modal content.</p>
+              <span id="close2-l" class="close-btn">&times;</span>
+              <p class="no-copy">
+                Ethereal orchestral piece with soft piano undertones, interlaced
+                with melancholic violin solos, reminiscent of historical
+                romance. Very gentle harp plucks accentuate moments of intimacy,
+                crescendos mirroring the ebb and flow of the sea. Haunting flute
+                melodies interspersed, evoking the vastness of the ocean and the
+                fragility of love. The backdrop is filled with soft, sweeping
+                strings, building up to a powerful climax, capturing the essence
+                of timeless romance and the breathtaking moments of connection
+                between two souls. As the story unfolds, subtle choral harmonies
+                emerge, giving depth and warmth, encapsulating the nostalgia and
+                longing found in epic tales of love.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="vid-c">
-          <div class="vid vid1-orig">
-            <video width="300" height="169" controls>
-              <source src="titanic-scene.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <iframe
+            width="560"
+            height="315"
+            class="vid vid2-orig"
+            src="https://www.youtube.com/embed/2oMNnoICtDg?si=YBkPypV7YbXWJPoz"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            class="vid vid2-gen"
+            src="https://www.youtube.com/embed/-Q_QSFSJzYo?si=hqHfzlW8eb-cRm-5"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            class="vid vid2-cmt"
+            src="https://www.youtube.com/embed/DLit4hqHCpA?si=fE7VU5LcBw74tcpB"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="vid-labels">
+          <p class="label">Original</p>
+          <p class="label">Herrmann-1</p>
+          <p class="label">CMT</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="c1">
+      <h3 class="example-title">Movie Name: The Social Network</h3>
+      <div class="example-c">
+        <div class="btn-c">
+          <div class="h-desc">
+            <button id="demo3-h-btn" class="my-btn h-btn">
+              High-level Descriptions
+            </button>
           </div>
 
-          <div class="vid vid1-herrmann">
-            <video width="300" height="169" controls>
-              <source src="titanic-scene-musiclm.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <!-- The Modal -->
+          <div id="demo3-h" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span id="close3-h" class="close-btn">&times;</span>
+              <p class="no-copy">
+                Given the following image captions from a video: 1) the sun is
+                setting over the city of san francisco 2) an image of a video
+                game screen with the words rb 2 on it 3) a video game screen
+                with the words subs tribe on it 4) a woman in lingerie standing
+                in front of a sign that says subscribe 5) a video game screen
+                with a neon sign that says subscribe 6) a video with the words
+                subscribe on it 7) a neon sign with the word subscribe on it 8)
+                a video of people dancing in a club with the word subscribe on
+                the screen 9) a group of people sitting at a table at night 10)
+                a group of people standing around a table at night 11) a group
+                of people sitting around a table at night 12) a young man
+                sitting at a table in a dimly lit room 13) a young man sitting
+                at a table in a dimly lit room 14) a group of people sitting
+                around a table at night 15) a group of people sitting around a
+                table at a bar 16) a young man sitting at a table in a dimly lit
+                room 17) a young man is looking at the camera with his mouth
+                open and the following transcriptions: 1) I was crashing there
+                for a little bit while taking care of some things but she's done
+                (SPEAKER_00) 2) for the summer so she's back in her parents
+                place. (SPEAKER_00) 3) The homeless rock star Palazzo.
+                (SPEAKER_00) 4) Alright. (SPEAKER_00) 5) What's your plan for
+                the summer? (SPEAKER_00) 6) Mark. (SPEAKER_00) and given that
+                the sentiments of the video are: excited 50.00% energetic 35.71%
+                sensual 14.29% Describe the music that would fit such a video.
+                Your output will be fed to a text to music model. To help you
+                out, here are some prompts that worked well with the model: 1)
+                Pop dance track with catchy melodies, tropical percussion, and
+                upbeat rhythms, perfect for the beach 2) classic reggae track
+                with an electronic guitar solo 3) earthy tones, environmentally
+                conscious, ukulele-infused, harmonic, breezy, easygoing, organic
+                instrumentation, gentle grooves 4) lofi slow bpm electro chill
+                with organic samples 5) violins and synths that inspire awe at
+                the finiteness of life and the universe 6) 80s electronic track
+                with melodic synthesizers, catchy beat and groovy bass Give me
+                only the description of the music without any explanation. Give
+                me a single description.
+              </p>
+            </div>
           </div>
 
-          <div class="vid vid1-cmt">
-            <video width="300" height="169" controls>
-              <source src="titanic-scene-cmt.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div class="l-desc">
+            <button id="demo3-l-btn" class="my-btn l-btn">
+              Low-level Text Conditions
+            </button>
           </div>
+
+          <!-- The Modal -->
+          <div id="demo3-l" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span id="close3-l" class="close-btn">&times;</span>
+              <p class="no-copy">
+                Upbeat electronic track with deep bass grooves, pulsating
+                synthesizers, rhythmic drum patterns, and hypnotic vocal
+                samples, perfect for high-energy nightlife vibes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vid-c">
+          <iframe
+            width="560"
+            height="315"
+            class="vid vid3-orig"
+            src="https://www.youtube.com/embed/2Yar6jiqDUU?si=PRajcuZdYjJkhDf_"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            class="vid vid3-gen"
+            src="https://www.youtube.com/embed/Tu_AXaHRjl8?si=BDr91hqyySgU1lpK"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            class="vid vid3-gen"
+            src="https://www.youtube.com/embed/nZiXEUz-TzU?si=7aGwJZdn0hu0Whi8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
 
         <div class="vid-labels">
