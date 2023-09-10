@@ -110,6 +110,8 @@ h1{
 
 .vid{
     justify-self: center ;
+    width: 300;
+    height: 169;
 }
 
 .btn-c{
@@ -160,10 +162,28 @@ h1{
     border: 1px solid #888;
     width: 80%;
     box-shadow: 0px 0px 10px 0px #000;
+    max-width: 1010px;
   }
 
-  /* Close Button */
-.close {
+.close-btn {
+    color: #aaa;
     float: right;
+    font-size: 28px;
+    font-weight: bold;
     cursor: pointer;
-  }
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p.no-copy {
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    margin-top: 12px;
+}
