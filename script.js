@@ -13,7 +13,7 @@ function closeModal(modal) {
   modal.style.display = "none";
 }
 
-for(let i = 1; i <= 6; i++){
+for(let i = 1; i <= 11; i++){
 
     console.log("inside for")
 
@@ -55,3 +55,6 @@ for(let i = 1; i <= 6; i++){
     });
 
 }
+
+
+
