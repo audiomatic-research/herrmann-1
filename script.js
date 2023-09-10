@@ -13,7 +13,7 @@ function closeModal(modal) {
   modal.style.display = "none";
 }
 
-for(let i = 1; i < 2; i++){
+for(let i = 1; i <= 3; i++){
 
     console.log("inside for")
 
@@ -23,8 +23,8 @@ for(let i = 1; i < 2; i++){
     let btn_h = document.getElementById("demo" + i.toString() + "-h-btn");
     let btn_l = document.getElementById("demo" + i.toString() + "-l-btn");
 
-    let close_h = document.getElementById("demo" + i.toString() + "-h");
-    let close_l = document.getElementById("demo" + i.toString() + "-h");
+    let close_h = document.getElementById("close" + i.toString() + "-h");
+    let close_l = document.getElementById("close" + i.toString() + "-l");
 
     btn_h.addEventListener("click", (event) => {
         openModal(modal_h);
@@ -33,7 +33,7 @@ for(let i = 1; i < 2; i++){
     btn_l.addEventListener("click", (event) => {
         openModal(modal_l);
     });
-    
+
     close_h.addEventListener("click", (event) => {
         closeModal(modal_h);
     })
@@ -41,6 +41,7 @@ for(let i = 1; i < 2; i++){
     close_l.addEventListener("click", (event) => {
         closeModal(modal_l);
     })
+    
 
     // Event listener for clicking outside the modal to close it
     window.addEventListener("click", function (event) {
@@ -54,6 +55,3 @@ for(let i = 1; i < 2; i++){
     });
 
 }
-
-
-
