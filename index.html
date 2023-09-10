@@ -1,0 +1,191 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Herrmann-1</title>
+  </head>
+  <body>
+    <div style="padding-bottom: 12px" class="c1">
+      <div class="c1-text">
+        <h1 style="font-size: 25px">
+          GPT-4 DRIVEN CINEMATIC MUSIC GENERATION THROUGH TEXT PROCESSING
+        </h1>
+
+        <p class="auth-names">
+          Muhammad Taimoor Haseeb<sup>*</sup>, Ahmad Hammoudeh<sup>*</sup>, Gus
+          Xia<sup>&#8224;</sup>
+        </p>
+        <p>Music X Lab, MBZUAI</p>
+      </div>
+      <p>
+        <b>Abstract</b>
+        This paper presents Herrmann-1, a multi-modal framework to generate
+        background music tailored to movie scenes, by integrating
+        state-of-the-art vision, language, music, and speech processing models.
+        Our pipeline begins by extracting visual and speech information from a
+        movie scene, performing emotional analysis on it, and converting these
+        into descriptive texts. Then, GPT-4 translates these high-level
+        descriptions into low-level music conditions. Finally, these text-based
+        music conditions guide a text-to-music model to generate music that
+        resonates with input movie scenes. Comprehensive objective and
+        subjective evaluations attest to the high synthesis quality, congruence,
+        and superiority of our pipeline.
+      </p>
+
+      <figure>
+        <img
+          style="margin-top: 40px; width: 100%"
+          src="pipeline.png"
+          alt="Herrmann-1 Pipeline"
+        />
+        <figcaption>
+          <b>Fig. 1</b> Our background music generation pipeline takes a movie
+          scene as input and generates a tailored audio music file.
+        </figcaption>
+      </figure>
+
+      <p style="padding-top: 40px">
+        <i
+          ><sup>*</sup>The first two authors contributed equally,
+          <sup>&#8224;</sup>Senior author.</i
+        >
+      </p>
+    </div>
+
+    <div class="c1">
+      <h3 class="example-title">Movie Name: The Titanic</h3>
+      <div class="example-c">
+        <div class="btn-c">
+          <div class="h-desc">
+            <button id="demo1-h-btn" class="my-btn h-btn">
+              High-level Descriptions
+            </button>
+          </div>
+
+          <!-- The Modal -->
+          <div id="demo1-h" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close1-h">&times;</span>
+              <p>This is the modal content.</p>
+            </div>
+          </div>
+
+          <div class="l-desc">
+            <button id="demo1-l-btn" class="my-btn l-btn">
+              Low-level Text Conditions
+            </button>
+          </div>
+
+          <!-- The Modal -->
+          <div id="demo1-l" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close1-l">&times;</span>
+              <p>This is the modal content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vid-c">
+          <div class="vid vid1-orig">
+            <video width="300" height="169" controls>
+              <source src="titanic-scene/video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="vid vid1-herrmann">
+            <video width="300" height="169" controls>
+              <source src="titanic-scene/video-music-gen.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="vid vid1-cmt">
+            <video width="300" height="169" controls>
+              <source src="titanic-scene/video-cmt.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <div class="vid-labels">
+          <p class="label">Original</p>
+          <p class="label">Herrmann-1</p>
+          <p class="label">CMT</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="c1">
+      <h3 class="example-title">The LionKing</h3>
+      <div class="example-c">
+        <div class="btn-c">
+          <div class="h-desc">
+            <button id="demo1-h-btn" class="my-btn h-btn">
+              High-level Descriptions
+            </button>
+          </div>
+
+          <!-- The Modal -->
+          <div id="demo1-h" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close1-h">&times;</span>
+              <p>This is the modal content.</p>
+            </div>
+          </div>
+
+          <div class="l-desc">
+            <button id="demo1-l-btn" class="my-btn l-btn">
+              Low-level Text Conditions
+            </button>
+          </div>
+
+          <!-- The Modal -->
+          <div id="demo1-l" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close1-l">&times;</span>
+              <p>This is the modal content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vid-c">
+          <div class="vid vid1-orig">
+            <video width="300" height="169" controls>
+              <source src="titanic-scene.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="vid vid1-herrmann">
+            <video width="300" height="169" controls>
+              <source src="titanic-scene-musiclm.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="vid vid1-cmt">
+            <video width="300" height="169" controls>
+              <source src="titanic-scene-cmt.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <div class="vid-labels">
+          <p class="label">Original</p>
+          <p class="label">Herrmann-1</p>
+          <p class="label">CMT</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
