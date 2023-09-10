@@ -42,7 +42,7 @@ h1{
 
 .auth-names{
     font-style: italic;
-    margin-bottom: 0;
+    margin-bottom: 40;
 }
 
 
@@ -187,3 +187,4 @@ p.no-copy {
     -ms-user-select: none; /* IE/Edge */
     margin-top: 12px;
 }
+
