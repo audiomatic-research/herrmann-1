@@ -110,8 +110,10 @@ h1{
 
 .vid{
     justify-self: center ;
-    width: 300;
-    height: 169;
+    /* width: 300;
+    height: 169; */
+    width: 32%;
+    height: 100%;
 }
 
 .btn-c{
@@ -134,7 +136,7 @@ h1{
 }
 
 .label{
-    width: 300;
+    width: 100%;
     justify-content: space-between;
     text-align: center;
     font-weight: bold;
@@ -188,3 +190,19 @@ p.no-copy {
     margin-top: 12px;
 }
 
+.vid-iframe{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 660px){
+    .vid-c{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vid{
+        width: 80%;
+        height: auto;
+    }
+}
